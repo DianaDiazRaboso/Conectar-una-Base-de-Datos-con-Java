@@ -14,9 +14,9 @@ Una vez hecho, establecemos la conexión con la base de datos por medio de estas
 
 -------
 
-try {
-	Connection miConexion =DriverManager.getConnection("rute", "user", "password", "bd" );
-Statement miStatement =miConexion.createStatement();
+		try {
+			Connection miConexion =DriverManager.getConnection("rute", "user", "password", "bd" );
+			Statement miStatement =miConexion.createStatement();
 			
 			ResultSet miResultset =miStatement.executeQuery("SELECT  * FROM TTable");
 			
